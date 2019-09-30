@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  root 'blogs#index'
   get 'relationships/create'
   get 'relationships/destroy'
-  root 'blogs#index'
-  resources :users
+  resources :users, only: [:index]
   resources :relationships, only:[:create, :destroy]
   resources :blogs do
     resources :comments

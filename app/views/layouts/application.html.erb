@@ -11,7 +11,7 @@
 
   <body>
     <header>
-      <p><%= link_to 'ユーザー一覧', user_path if logged_in? %></p>
+      <p><%= link_to 'ユーザー一覧', users_path if logged_in? %></p>
     </header>
     <%= yield %>
   </body>

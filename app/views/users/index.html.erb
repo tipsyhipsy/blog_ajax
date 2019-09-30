@@ -3,5 +3,5 @@
 <% @users.each do |u| %>
 	<%= u.name  %>
 	<%= u.email %>
-	<%= render 'follow_form', user: @user %>
+	<%= render 'follow_form', user: u %>
 <% end %>
